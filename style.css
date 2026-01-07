@@ -1,18 +1,43 @@
-:root{
+:root {
     --primary: #5E3BEE;
     --secondary: #1C1E53;
-
+    --tertiary: #F5FCFF;
 }
 
-.btn-purple{
+/* navbar */
+.home {
+    color: var(--primary);
+}
+
+.links {
+    color: var(--secondary);
+}
+
+.btn-purple {
     color: var(--primary);
     border: 1px solid var(--primary);
 }
 
-.home{
-    color: var(--primary);
+/* hero section */
+.lightblue {
+    background-color: var(--tertiary);
 }
 
-.links{
-    color: var(--secondary);
+.get-btn {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* features */
+.color-purple {
+    border-bottom: 2px solid var(--primary);
+}
+
+.width {
+    width: 23%;
+}
+
+/* about me */
+.justify {
+    text-align: justify;
 }

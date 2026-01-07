@@ -4,24 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand ms-4" href="#"><img src="./images/Logo.svg" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-between px-4" id="navbarSupportedContent">
+                <a class="navbar-brand" href="#"><img src="./images/Logo.svg" alt="logo"></a>
                 <ul class="navbar-nav mb-2 mb-lg-0 gap-4">
                     <li class="nav-item">
-                        <a class="nav-link home" aria-current="page" href="#">Home</a>
+                        <a class="nav-link home" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link links" href="#">Portfolio</a>
@@ -32,14 +28,114 @@
                     <li class="nav-item">
                         <a class="nav-link links" href="#">Testimonials</a>
                     </li>
-
                 </ul>
-                <button class="btn btn-purple " type="submit">Contact Me</button>
+                <button class="btn btn-purple" type="submit">Contact Me</button>
             </div>
         </div>
     </nav>
+    <!-- navbar end -->
 
+    <!-- hero section start -->
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5 lightblue w-100 ps-4 m-0">
+        <div class="col-10 col-sm-8 col-lg-6 pe-0"> <img src="./images/Group 11 1.svg"
+                class="d-block mx-lg-auto img-fluid" alt="man" width="1000" height="500" loading="lazy"> </div>
+        <div class="col-lg-6">
+            <p class="lead fw-semibold">Hey, I am John</p>
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">I create <span class="home">product design</span>
+                and brand experience</h1>
+            <p class="lead fw-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur nihil quasi
+                velit.
+                Voluptates, a eveniet?</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start"> <button type="button"
+                    class="btn get-btn btn-lg px-4 me-md-2">Get In Touch</button> </div>
+        </div>
+    </div>
+    <!-- hero section end -->
 
+    <!-- features start -->
+    <div class="container py-5 px-1" id="featured-3">
+        <p class="lead fw-semibold">My Skills</p>
+        <h2 class="pb-2 fw-bold">My Expertise</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 gap-4">
+            <div class="feature col lightblue width color-purple rounded-2">
+                <img src="./images/Strategy & Direction.svg" alt="img1">
+                <h3 class="fs-5 fw-bold pb-2 text-body-emphasis">Strategy & Direction</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est sapiente ullam excepturi optio ipsa
+                    expedita?</p>
+            </div>
+
+            <div class="feature col lightblue width rounded-2">
+                <img src="./images/Branding & Logo.svg" alt="img2">
+                <h3 class="fs-5 fw-bold pb-2 text-body-emphasis">Branding & Logo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eveniet a culpa illum, numquam nisi.
+                </p>
+            </div>
+
+            <div class="feature col lightblue width rounded-2">
+                <img src="./images/UI & UX Design.svg" alt="img3">
+                <h3 class="fs-5 fw-bold pb-2 text-body-emphasis">UI & UX Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad hic qui quam suscipit quis nesciunt?</p>
+            </div>
+
+            <div class="feature col lightblue width rounded-2">
+                <img src="./images/Webflow Development.svg" alt="img4">
+                <h3 class="fs-5 fw-bold pb-2 text-body-emphasis">Webflow Development</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad hic qui quam suscipit quis nesciunt?</p>
+            </div>
+        </div>
+    </div>
+    <!-- features end -->
+
+    <!-- about me start -->
+    <div class="row flex-lg-row align-items-center g-5 py-5 w-100 m-0">
+        <div class="col-10 col-sm-8 col-lg-6"> <img src="./images/About Me.svg" class="d-block mx-lg-auto img-fluid"
+                alt="man-2" width="500" height="500" loading="lazy"> </div>
+        <div class="col-lg-6 pe-5">
+            <p class="lead fw-semibold">About</p>
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Me</h1>
+            <p class="lead fw-normal justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas magnam
+                error ipsa
+                ipsam omnis exercitationem modi, itaque, laborum ullam cum, necessitatibus aperiam. Placeat suscipit
+                ipsa molestiae error? Numquam nemo ea omnis eaque libero quidem, in doloremque rem, exercitationem
+                impedit iste?</p>
+            <p class="lead fw-normal justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto. Ipsa
+                ipsum
+                est culpa adipisci iste amet obcaecati assumenda suscipit.</p>
+        </div>
+    </div>
+    <!-- about me start -->
+
+    <!-- my projects start -->
+    <div class="container px-4 py-5 ps-1" id="featured-3">
+        <h2 class="pb-2">My Projects</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+                <img class="w-50" src="./images/p1.svg" alt="p1">
+                <h3 class="fs-2 text-body-emphasis">Ahuse</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis quam beatae, magnam voluptatibus
+                    suscipit?</p>
+                <a href="#" class="icon-link">View In Dribbble <img src="./images/Vector.svg" alt="arrow"></a>
+            </div>
+
+            <div class="feature col">
+                <img class="w-50" src="./images/p2.svg" alt="p2">
+                <h3 class="fs-2 text-body-emphasis">App Dashboard</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos beatae, iure distinctio optio dicta
+                    omnis.</p> <a href="#" class="icon-link">View In Dribbble <img src="./images/Vector.svg"
+                        alt="arrow"></a>
+            </div>
+            <div class="feature col">
+                <img class="w-50" src="./images/p3.svg" alt="p3">
+                <h3 class="fs-2 text-body-emphasis">Easy Rent</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veniam suscipit minus neque
+                    eaque repudiandae!.</p> <a href="#" class="icon-link">View In Dribbble <img
+                        src="./images/Vector.svg" alt="arrow"></a>
+            </div>
+        </div>
+    </div>
+    <!-- my projects end -->
+
+    <!-- bootstrap javascript -->
     <script src="bootstrap.js"></script>
 </body>
 
