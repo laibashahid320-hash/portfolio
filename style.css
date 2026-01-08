@@ -1,10 +1,17 @@
+/* variables */
 :root {
     --primary: #5E3BEE;
     --secondary: #1C1E53;
     --tertiary: #F5FCFF;
+    --color: #006B6A;
+    --heading: #282938;
 }
 
 /* navbar */
+.heading {
+    color: var(--heading);
+}
+
 .home {
     color: var(--primary);
 }
@@ -40,4 +47,30 @@
 /* about me */
 .justify {
     text-align: justify;
+}
+
+/* my projects */
+.project-width {
+    width: 30%;
+}
+
+.border-line {
+    border-bottom: 1px solid var(--primary);
+}
+
+.arrow {
+    width: 15px;
+}
+
+/* customer testimonials */
+.green-b {
+    border: 1px solid var(--color);
+}
+
+.custom {
+    width: 31%;
+}
+
+.img-width {
+    width: 20%;
 }
