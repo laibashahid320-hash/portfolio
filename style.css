@@ -74,3 +74,28 @@
 .img-width {
     width: 20%;
 }
+
+
+/* contact me */
+.new {
+    border: 1.5px solid var(--primary) !important;
+
+}
+
+.form-control.new:focus,
+.form-select.new:focus,
+textarea.form-control.new:focus {
+    background-color: transparent;
+    border: 1.5px solid #5f3beea6;
+    outline: 0;
+    box-shadow: 1px 1px 10px #5f3beea6;
+}
+
+/* footer */
+.footer-border {
+    border-top: 1px solid black;
+}
+
+.border-width {
+    width: 93%;
+}
