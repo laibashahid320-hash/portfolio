@@ -11,33 +11,41 @@
 
 <body>
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-expand-sm bg-white">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse justify-content-between px-4" id="navbarSupportedContent">
-                <a class="navbar-brand" href="#"><img src="./images/Logo.svg" alt="logo"></a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-5">
+            <div class="w-25"><a class="navbar-brand" href="#"><img src="./images/Logo.svg" alt="logo"></a></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between w-75 ms-5 ps-5" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 gap-4">
                     <li class="nav-item">
-                        <a class="nav-link home" href="#">Home</a>
+                        <a class="nav-link active home" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link links" href="#">Portfolio</a>
+                        <a class="nav-link active links" aria-current="page" href="#">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link links" href="#">About me</a>
+                        <a class="nav-link active links" aria-current="page" href="#">About me</a>
+                    </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link links" href="#">Testimonials</a>
+                        <a class="nav-link active links" aria-current="page" href="#">Testimonilas</a>
                     </li>
                 </ul>
-                <button class="btn btn-purple" type="submit">Contact Me</button>
+                <form class="d-flex" role="search">
+                    <button class="btn hover btn-purple" type="submit">Contact Me</button>
+                </form>
             </div>
         </div>
     </nav>
     <!-- navbar end -->
 
     <!-- hero section start -->
-    <div class="row flex-lg-row-reverse align-items-sm-center align-items-center g-5 py-5 lightblue w-100 ps-4 m-0">
-        <div class="col-10 col-sm-8 col-lg-6 pe-0"> <img src="./images/Group 11 1.svg"
+    <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5 lightblue w-100 ps-4 m-0">
+        <div class="col-10 col-sm-8 col-lg-6 pe-lg-0"> <img src="./images/Group 11 1.svg"
                 class="d-block mx-lg-auto img-fluid" alt="man" width="1000" height="500" loading="lazy"></div>
         <div class="col-lg-6">
             <p class="lead fw-semibold heading">Hey, I am John</p>
@@ -56,40 +64,52 @@
     <div class="container py-5 px-1" id="featured-3">
         <p class="lead fw-semibold heading">My Skills</p>
         <h2 class="pb-2 fw-bold heading">My Expertise</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 justify-content-between">
-            <div class="feature col lightblue width color-purple rounded-2">
-                <img src="./images/Strategy & Direction.svg" alt="img1">
-                <h3 class="fs-5 fw-bold pb-2 text-body-emphasis heading">Strategy & Direction</h3>
-                <p class="links">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-                    eros elementum tristique.</p>
+        <div class="g-4 py-5 row row-cols-auto row-cols-sm-2 row-cols-md-2 row-cols-lg-4 justify-content-between">
+            <div class="card col lightblue color-purple rounded-2" style="width: 17rem;">
+                <img src="./images/Strategy & Direction.svg" class="card-img-top w-25" alt="img1">
+                <div class="card-body">
+                    <h5 class="card-title fs-5 fw-bold pb-2 text-body-emphasis heading">Strategy & Direction</h5>
+                    <p class="card-text links">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        varius enim in
+                        eros elementum tristique.</p>
+                </div>
             </div>
 
-            <div class="feature col lightblue width rounded-2">
-                <img src="./images/Branding & Logo.svg" alt="img2">
-                <h3 class="fs-5 fw-bold pb-2 text-body-emphasis heading">Branding & Logo</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique.</p>
+            <div class="card col lightblue none-b rounded-2" style="width: 17rem;">
+                <img src="./images/Branding & Logo.svg" class="card-img-top w-25" alt="img2">
+                <div class="card-body">
+                    <h5 class="card-title fs-5 fw-bold pb-2 text-body-emphasis heading">Branding & Logo</h5>
+                    <p class="card-text links">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        varius enim in eros elementum
+                        tristique.</p>
+                </div>
             </div>
 
-            <div class="feature col lightblue width rounded-2">
-                <img src="./images/UI & UX Design.svg" alt="img3">
-                <h3 class="fs-5 fw-bold pb-2 text-body-emphasis heading">UI & UX Design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique.</p>
+            <div class="card col lightblue none-b rounded-2" style="width: 17rem;">
+                <img src="./images/UI & UX Design.svg" class="card-img-top w-25" alt="img3">
+                <div class="card-body">
+                    <h5 class="card-title fs-5 fw-bold pb-2 text-body-emphasis heading">UI & UX Design</h5>
+                    <p class="card-text links">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        varius enim in eros elementum
+                        tristique.</p>
+                </div>
             </div>
 
-            <div class="feature col lightblue width rounded-2">
-                <img src="./images/Webflow Development.svg" alt="img4">
-                <h3 class="fs-5 fw-bold pb-2 text-body-emphasis heading">Webflow Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique.</p>
+            <div class="card col lightblue none-b rounded-2" style="width: 17rem;">
+                <img src="./images/Webflow Development.svg" class="card-img-top w-25" alt="img4">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold pb-2 text-body-emphasis heading font">Webflow Development</h5>
+                    <p class="card-text links">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        varius enim in eros elementum
+                        tristique.</p>
+                </div>
             </div>
         </div>
     </div>
     <!-- features end -->
 
     <!-- about me start -->
-    <div class="row flex-lg-row align-items-center g-5 py-5 w-100 m-0">
+    <div class="row flex-lg-row align-items-center justify-content-center g-5 py-5 w-100 m-0">
         <div class="col-10 col-sm-8 col-lg-6"> <img src="./images/About Me.svg" class="d-block mx-lg-auto img-fluid"
                 alt="man-2" width="500" height="500" loading="lazy"> </div>
         <div class="col-lg-6 pe-5">
@@ -108,7 +128,7 @@
     <div class="container px-4 py-5 ps-1" id="featured-3">
         <h2 class="mb-4 pb-4 fw-bold text-center heading">My Projects</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 justify-content-around">
-            <div class="feature col shadow project-width p-0">
+            <div class="feature col shadow p-0 project-width">
                 <img class="w-100" src="./images/p1.svg" alt="p1">
                 <h3 class="fs-5 fw-bold text-body-emphasis p-4 m-0 heading">Ahuse</h3>
                 <p class="px-4 fs-6 links">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
@@ -118,7 +138,7 @@
                     In Dribbble <img class="arrow" src="./images/Vector.svg" alt="arrow"></a>
             </div>
 
-            <div class="feature col shadow project-width p-0">
+            <div class="feature col shadow p-0 project-width">
                 <img class="w-100" src="./images/p2.svg" alt="p2">
                 <h3 class="fs-5 fw-bold text-body-emphasis p-4 m-0 heading">App Dashboard</h3>
                 <p class="px-4 fs-6 links">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
@@ -126,7 +146,7 @@
                     class="icon-link text-decoration-none text-dark fw-bold mx-4 mb-5 border-line gap-2 fs-6 pb-2">View
                     In Dribbble <img class="arrow" src="./images/v2.svg" alt="arrow"></a>
             </div>
-            <div class="feature col shadow project-width p-0">
+            <div class="feature col shadow p-0 project-width">
                 <img class="w-100" src="./images/p3.svg" alt="p3">
                 <h3 class="fs-5 fw-bold text-body-emphasis p-4 m-0 heading">Easy Rent</h3>
                 <p class="px-4 fs-6 links">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
@@ -184,7 +204,7 @@
     </div>
     <!-- customer testimonials end -->
 
-    <!-- contact me start -->
+    <!-- form start -->
     <div class="row g-5 m-0 justify-content-center py-5">
         <div class="col-md-7 col-lg-8">
             <div class="text-center pb-5">
@@ -242,12 +262,12 @@
             </form>
         </div>
     </div>
-    <!-- contact me end -->
+    <!-- form end -->
 
     <!-- footer start -->
-    <footer class="d-flex justify-content-between lightblue py-5 px-5 m-0 mt-5">
+    <footer class="d-flex flex-wrap justify-content-center justify-content-xl-between lightblue py-5 px-5 m-0 mt-5">
         <div>
-            <img class="w-75" src="./images/Logo.svg" alt="logo2">
+            <img class="w-lg-75" src="./images/Logo.svg" alt="logo2">
         </div>
         <ul class="nav justify-content-center pb-3 fs-6 gap-2 fw-normal">
             <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">Home</a></li>
@@ -264,10 +284,13 @@
             <img src="./images/LinkedIn.svg" alt="linkedin">
         </div>
     </footer>
+
     <hr class="footer-border py-0 m-0 border-width">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center pt-3 lightblue m-0 px-5 pb-5">
+
+    <footer
+        class="d-flex flex-wrap justify-content-center justify-content-xl-between align-items-center pt-3 lightblue m-0 px-5 pb-5">
         <p class="col-md-4 mb-0 text-dark fw-normal">Made with 💖 by Laiba Shahid</p>
-        <ul class="nav col-md-4 justify-content-end fs-6 fw-normal">
+        <ul class="nav col-md-8 justify-content-end fs-6 fw-normal">
             <li class="nav-item"><a href="#" class="nav-link px-2 text-dark text-decoration-underline">Privacy
                     Policy</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-dark text-decoration-underline">Terms of

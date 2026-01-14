@@ -13,11 +13,11 @@
 }
 
 .home {
-    color: var(--primary);
+    color: var(--primary) !important;
 }
 
 .links {
-    color: var(--secondary);
+    color: var(--secondary) !important;
 }
 
 .btn-purple {
@@ -25,9 +25,21 @@
     border: 1px solid var(--primary);
 }
 
+.hover:hover {
+    color: var(--primary);
+}
+
+.hover:active {
+    color: var(--primary) !important;
+}
+
+.hover:focus {
+    color: var(--primary);
+}
+
 /* hero section */
 .lightblue {
-    background-color: var(--tertiary);
+    background-color: var(--tertiary) !important;
 }
 
 .get-btn {
@@ -37,11 +49,16 @@
 
 /* features */
 .color-purple {
+    border: none;
     border-bottom: 2px solid var(--primary);
 }
 
-.width {
-    width: 23%;
+.none-b {
+    border: none;
+}
+
+.font {
+    font-size: larger;
 }
 
 /* about me */
@@ -50,9 +67,6 @@
 }
 
 /* my projects */
-.project-width {
-    width: 30%;
-}
 
 .border-line {
     border-bottom: 1px solid var(--primary);
@@ -67,16 +81,12 @@
     border: 1px solid var(--color);
 }
 
-.custom {
-    width: 31%;
-}
-
 .img-width {
     width: 20%;
 }
 
 
-/* contact me */
+/* form */
 .new {
     border: 1.5px solid var(--primary) !important;
 
@@ -98,4 +108,15 @@ textarea.form-control.new:focus {
 
 .border-width {
     width: 93%;
+}
+
+/* media quaires */
+@media screen and (min-width:992px) {
+    .project-width {
+        width: 30%;
+    }
+
+    .custom {
+        width: 31%;
+    }
 }
